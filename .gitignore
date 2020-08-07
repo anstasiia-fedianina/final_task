@@ -1,0 +1,27 @@
+.idea/
+target
+*.iml
+*.ipr
+# I did not include .gitignore in itself in order to push it to origin
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.out
+hs_err_pid*
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+out/
