@@ -11,9 +11,13 @@ public class SearchResultHelper extends BaseHelper<SearchResultsPage> {
         super(new SearchResultsPage());
     }
 
-    public boolean titlesContainRequest (String request) {
+    public boolean titlesContainRequest(String request) {
         return getPage().getItemTitles().stream()
                 .allMatch(item -> item.getText().toLowerCase().contains(request.toLowerCase()));
+    }
+
+    public boolean firstTitleContainRequest(String request) {
+        return getPage().getItemTitles().get(0).getText().toLowerCase().contains(request.toLowerCase());
     }
 
     public void clickFirstResult() {

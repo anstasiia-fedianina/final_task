@@ -9,12 +9,13 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AddingToCartTest {
+    public static final String SEARCH_REQUEST = "kingdom hearts";
 
     @Test
     public void addToCartFromSearch() {
         MainPageHelper mainPageHelper = new MainPageHelper();
         mainPageHelper.openPage();
-        mainPageHelper.fillSearchField("kingdom hearts");
+        mainPageHelper.fillSearchField(SEARCH_REQUEST);
         SearchResultHelper searchResultHelper = new SearchResultHelper();
         searchResultHelper.clickFirstResult();
         ItemPageHelper itemPageHelper = new ItemPageHelper();

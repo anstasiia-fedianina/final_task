@@ -13,6 +13,8 @@ public class MainPage extends BasePage {
     private static final SelenideElement logo = $x("//img[contains(@id,'gh-logo')]");
     private SelenideElement searchField = $x("//input[@type='text']");
     private SelenideElement regButton = $x("//a[contains(text(),'reg')]");
+    private SelenideElement categorySelect = $x("//select[@id='gh-cat']");
+    private SelenideElement booksOption = $x("//option[contains(text(),'Books')]");
 
     public MainPage() {
         super(logo);
