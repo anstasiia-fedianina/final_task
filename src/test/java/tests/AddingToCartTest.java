@@ -4,11 +4,11 @@ import ebay.helpers.impl.CartPageHelper;
 import ebay.helpers.impl.ItemPageHelper;
 import ebay.helpers.impl.MainPageHelper;
 import ebay.helpers.impl.SearchResultHelper;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AddingToCartTest extends BaseTest {
+public class AddingToCartTest {
 
     @Test
     public void addToCartFromSearch() {

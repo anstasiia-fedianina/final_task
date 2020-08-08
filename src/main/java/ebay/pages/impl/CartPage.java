@@ -1,12 +1,10 @@
 package ebay.pages.impl;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import ebay.PagePath;
 import ebay.pages.BasePage;
 import lombok.Getter;
 
-import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 @PagePath("https://cart.payments.ebay.com/")

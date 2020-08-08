@@ -3,9 +3,10 @@ package tests;
 import ebay.helpers.impl.MainPageHelper;
 import ebay.helpers.impl.RegistrationHelper;
 import org.assertj.core.api.SoftAssertions;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
-public class RegistrationTest extends BaseTest {
+
+public class RegistrationTest {
     @Test
     public void checkEmptyEmailAndPasswordError() {
         MainPageHelper mainPageHelper = new MainPageHelper();

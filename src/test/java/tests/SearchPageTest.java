@@ -2,11 +2,11 @@ package tests;
 
 import ebay.helpers.impl.MainPageHelper;
 import ebay.helpers.impl.SearchResultHelper;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SearchPageTest extends BaseTest {
+public class SearchPageTest {
 
     @Test
     public void searchFor() {

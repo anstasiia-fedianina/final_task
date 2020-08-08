@@ -2,7 +2,6 @@ package ebay.helpers.impl;
 
 import com.codeborne.selenide.Condition;
 import ebay.helpers.BaseHelper;
-import ebay.pages.BasePage;
 import ebay.pages.impl.CartPage;
 
 public class CartPageHelper extends BaseHelper<CartPage> {
@@ -10,7 +9,7 @@ public class CartPageHelper extends BaseHelper<CartPage> {
         super(new CartPage());
     }
 
-    public boolean itemIsDisplayed(){
+    public boolean itemIsDisplayed() {
         return getPage().getItemInfo().isDisplayed();
     }
 
